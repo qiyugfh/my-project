@@ -10,9 +10,9 @@ export default {
     };
   },
   methods: {
-    // getMessage(m) {
-    //     this.message = m;
-    // }
+    getMessage(m) {
+        this.message = m;
+    }
   }
 };
 </script>

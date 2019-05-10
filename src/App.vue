@@ -9,15 +9,30 @@
       <li>
         <router-link to="/second">第二页</router-link>
       </li>
-      <li>
+      <!-- <li>
         <router-link to="/father">第三页</router-link>
-      </li>
+      </li>-->
     </ul>
     <router-view/>
+
+    <father></father>
+
+    <h1>msg: {{msg}}</h1>
   </div>
 </template>
 
+
+
 <script>
+import father from "./components/father.vue";
+export default {
+  data() {
+    return {
+      msg: "Hello Vue!"
+    };
+  },
+  components: {father}
+};
 </script>
 
 <style>
